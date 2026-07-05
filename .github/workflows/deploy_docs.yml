@@ -1,0 +1,35 @@
+name: Deploy Sphinx Docs to GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ] # Triggers the build on every push to main
+
+permissions:
+  contents: write # Allows pushing the built HTML to the gh-pages branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          pip install sphinx sphinx-rtd-theme
+
+      - name: Build HTML Docs
+        run: |
+          sphinx-build -b html docs/source docs/build/html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/build/html
+
