@@ -17,3 +17,4 @@ documentation for details.
 
    bitbake/bitbake
    bsp/bsp
+   petalinux/petalinux
