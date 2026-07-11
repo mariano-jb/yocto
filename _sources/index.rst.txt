@@ -4,10 +4,10 @@
    contain the root `toctree` directive.
 
 Electronics documentation
-=========================
+==========================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
+This page is a guide to get enroll in Yocto project, which can be foun here:
+`reStructuredText <https://docs.yoctoproject.org>`_
 documentation for details.
 
 
