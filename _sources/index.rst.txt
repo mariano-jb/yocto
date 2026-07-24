@@ -8,7 +8,10 @@ Electronics documentation
 
 This page is a guide to get enroll in Yocto project, which can be foun here:
 `reStructuredText <https://docs.yoctoproject.org>`_
-documentation for details.
+
+bitbake setup
+
+`reStructuredText <https://docs.yoctoproject.org/brief-yoctoprojectqs/index.html#use-git-to-clone-bitbake-setup>`_
 
 
 .. toctree::
