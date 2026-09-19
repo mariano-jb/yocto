@@ -6,7 +6,7 @@
 Electronics documentation
 ==========================
 
-This page is a guide to get enroll in Yocto project, which can be foun here:
+This page is a guide to get enroll in Yocto project, which can be found here:
 `reStructuredText <https://docs.yoctoproject.org>`_
 
 bitbake setup
@@ -18,6 +18,7 @@ bitbake setup
    :maxdepth: 2
    :caption: Contents:
 
-   bitbake/bitbake
-   bsp/bsp
-   petalinux/petalinux
+   Automatic Test Equipment/ate
+   CADCAM/cadcam
+   EmbeddedSystems/embedded
+   FPGAs/fpgas
